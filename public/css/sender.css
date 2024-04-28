@@ -1,0 +1,126 @@
+.form-header,
+.code-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.code-link {
+  color: #3ab402;
+  text-decoration: underline;
+}
+
+.code-span {
+  margin-left: 5px;
+  color: #3ab402;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-header .text-box-title,
+.code-container h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.form-container .text-box {
+  max-height: 850px;
+  min-height: 350px;
+  min-width: 750px;
+  max-width: 750px;
+  padding-top: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 5px solid #52ff00;
+  margin-bottom: 20px;
+  outline: none;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.form-container .text-box::placeholder {
+  text-align: center;
+  font-size: 20px;
+  color: #52ff00;
+}
+
+.share-button-and-code {
+  display: flex;
+  justify-content: space-between;
+  width: 750px;
+}
+
+.share-button-and-code .share-button {
+  padding: 15px 25px;
+  font-size: 17px;
+  font-weight: bold;
+  background: #3ab402;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.4s ease-in-out;
+}
+
+.share-button-and-code .share-button:hover {
+  background: #52ff00;
+}
+
+.share-button-and-code .passcode {
+  display: inline-block;
+  padding-top: 16px;
+  padding-left: 13px;
+  padding-right: 13px;
+  background-color: rgb(8, 115, 202);
+  color: #fff;
+  font-weight: bold;
+  font-size: 17px;
+  border-radius: 25px;
+  font-family: sans-serif;
+  /* display: none; */
+}
+
+.passcode.hidden {
+  display: none;
+}
+
+.share-button-and-code .shareNcopy {
+  display: flex;
+}
+
+.share-button-and-code .copy-btn {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 17px;
+  padding-right: 17px;
+  background-color: var(--primary-color);
+  border: 2px solid #52ff00;
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 25px;
+  font-family: sans-serif;
+  outline: none;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: -webkit-text-stroke-width 0.45s ease-in-out,
+    -webkit-text-stroke-color 0.49s ease-in-out;
+}
+
+.share-button-and-code .copy-btn:hover {
+  background: #52ff00;
+  color: #fff;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: rgb(6, 82, 126);
+}
